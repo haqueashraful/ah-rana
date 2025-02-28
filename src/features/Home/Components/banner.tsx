@@ -14,6 +14,9 @@ const Banner = () => {
       <div className="w-full mx-auto gap-10 lg:gap-0">
         <div className="w-72 mx-auto">
           <Image
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          data-aos-anchor-placement="top-center"
             width={0}
             height={0}
             alt="ashraful"

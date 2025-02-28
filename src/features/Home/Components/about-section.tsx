@@ -1,4 +1,6 @@
-"use client"
+"use client";
+
+import { useEffect } from "react";
 
 import SectionTitle from "@/components/section-title";
 import {
@@ -15,35 +17,39 @@ import figma from "@/assets/figma.png";
 import git from "@/assets/git.png";
 import firebase from "@/assets/firebase.png";
 import mongo from "@/assets/mongo.png";
-import image from "@/assets/one.jpeg"
+import image from "@/assets/one.jpeg";
+
 
 const AboutSection = () => {
+
   return (
     <div>
       <SectionTitle intro="Introduction" title="Who am I?" />
 
       <div className="flex items-start gap-10 flex-col xl:flex-row">
-        {/* <div className="col-span-1 w-full mx-auto md:w-3/5"> */}
-          <Image
+        <Image
+          data-aos="fade-right"
           width={0}
           height={0}
           alt="ashraful"
-            src={image}
-            className="w-2/3 mx-auto lg:w-full h-full rounded-lg shadow-rn dark:shadow-dark-rn"
-          />
-        {/* </div> */}
+          src={image}
+          className="w-2/3 mx-auto lg:w-full h-full rounded-lg shadow-rn dark:shadow-dark-rn"
+        />
 
-        <div className="flex justify-center flex-col">
-          <p className="text-justify text-lg">
+        <div
+        data-aos="fade-left"
+         className="flex justify-center flex-col">
+          <p data-aos="fade-left" className="text-justify text-lg">
             Hello There! I am a Full Stack web developer. I have 4+ years of
-            experience in web programming. My Technology Skills:- HTML, CSS,
+            experience in web programming. My Technology Skills: HTML, CSS,
             SCSS, Tailwind CSS, Bootstrap, Material UI, JavaScript, ES6,
             React.js, React Router, Next.js, Redux, Firebase, Node.js,
-            Express.js, MongoDB Etc.
+            Express.js, MongoDB, etc.
           </p>
 
+          {/* Cards Section */}
           <div className="w-full grid grid-cols-1 xl:grid-cols-3 items-center gap-4 xl:gap-8 mt-10">
-            <Card className="h-full">
+            <Card className="h-full" data-aos="fade-up">
               <CardHeader className="space-y-4">
                 <CardDescription>
                   <svg
@@ -79,7 +85,7 @@ const AboutSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="h-full">
+            <Card className="h-full" data-aos="fade-up" data-aos-delay="200">
               <CardHeader className="space-y-4">
                 <CardDescription>
                   <svg
@@ -106,11 +112,13 @@ const AboutSection = () => {
               <CardContent>
                 <strong className="text-lg">Diploma in Engineering</strong>
                 <p> Computer Science and Technology</p>
-                <p>CGPA: <strong>3.42</strong></p>
+                <p>
+                  CGPA: <strong>3.42</strong>
+                </p>
               </CardContent>
             </Card>
 
-            <Card className="h-full">
+            <Card className="h-full" data-aos="fade-up" data-aos-delay="400">
               <CardHeader className="space-y-4">
                 <CardDescription>
                   <svg
@@ -146,27 +154,43 @@ const AboutSection = () => {
             </Card>
           </div>
 
-          <div className="mt-10">
-            <p>Tools i use</p>
+          <div className="mt-10" data-aos="fade-up">
+            <p>Tools I use</p>
 
             <div className="flex gap-5 my-3">
-              <Card className="border rounded-md p-2">
+              <Card className="border rounded-md p-2" data-aos="zoom-in">
                 <Image width={32} height={32} src={vscode} alt="vscode" />
               </Card>
 
-              <Card className="border rounded-md p-2">
+              <Card
+                className="border rounded-md p-2"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+              >
                 <Image width={32} height={32} src={firebase} alt="figma" />
               </Card>
 
-              <Card className="border rounded-md p-2">
+              <Card
+                className="border rounded-md p-2"
+                data-aos="zoom-in"
+                data-aos-delay="400"
+              >
                 <Image width={32} height={32} src={mongo} alt="git" />
               </Card>
 
-              <Card className="border rounded-md p-2">
+              <Card
+                className="border rounded-md p-2"
+                data-aos="zoom-in"
+                data-aos-delay="600"
+              >
                 <Image width={32} height={32} src={figma} alt="github" />
               </Card>
 
-              <Card className="border rounded-md p-2">
+              <Card
+                className="border rounded-md p-2"
+                data-aos="zoom-in"
+                data-aos-delay="800"
+              >
                 <Image width={32} height={32} src={git} alt="github" />
               </Card>
             </div>

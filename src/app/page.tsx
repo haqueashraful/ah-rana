@@ -1,3 +1,5 @@
+"use client";
+
 import ScrollingText from "@/components/scrolling-text";
 import AboutSection from "@/features/Home/Components/about-section";
 import Banner from "@/features/Home/Components/banner";
@@ -5,7 +7,16 @@ import ContactSection from "@/features/Home/Components/contact-section";
 import ProjectSection from "@/features/Home/Components/project-section";
 import ServicesSection from "@/features/Home/Components/services-section";
 
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 export default function Home() {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div className="min-h-screen space-y-28">
       <div className="container-rn">

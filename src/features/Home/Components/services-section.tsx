@@ -25,7 +25,7 @@ const ServicesSection = () => {
       />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6">
-        <Card className="p-2">
+        <Card data-aos="fade-left" data-aos-delay="100" className="p-2">
           <CardHeader>
             <Image width={64} height={64} src={webdesign} alt="web-design" />
           </CardHeader>
@@ -39,7 +39,7 @@ const ServicesSection = () => {
           </CardContent>
         </Card>
 
-        <Card className="p-2">
+        <Card data-aos="fade-left" data-aos-delay="200" className="p-2">
           <CardHeader>
             <Image width={64} height={64} src={responsive} alt="web-design" />
           </CardHeader>
@@ -53,7 +53,7 @@ const ServicesSection = () => {
           </CardContent>
         </Card>
 
-        <Card className="p-2">
+        <Card data-aos="fade-right" data-aos-delay="200" className="p-2">
           <CardHeader>
             <Image width={64} height={64} src={fullstack} alt="web-design" />
           </CardHeader>
@@ -67,7 +67,7 @@ const ServicesSection = () => {
           </CardContent>
         </Card>
 
-        <Card className="p-2">
+        <Card data-aos="fade-right" data-aos-delay="100" className="p-2">
           <CardHeader>
             <Image width={64} height={64} src={backend} alt="web-design" />
           </CardHeader>
