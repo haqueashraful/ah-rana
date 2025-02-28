@@ -1,3 +1,4 @@
+import ScrollingText from "@/components/scrolling-text";
 import AboutSection from "@/features/Home/Components/about-section";
 import Banner from "@/features/Home/Components/banner";
 import ContactSection from "@/features/Home/Components/contact-section";
@@ -10,6 +11,11 @@ export default function Home() {
       <div className="container-rn">
         <Banner />
       </div>
+
+      <div className="flex flex-col items-center justify-center container-rn">
+      <ScrollingText />
+      <p className="text-lg text-gray-600 mt-10">Explore my portfolio below!</p>
+    </div>
 
       <div className="container-rn">
         <AboutSection />
