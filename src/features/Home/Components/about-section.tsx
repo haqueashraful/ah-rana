@@ -1,7 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
-
 import SectionTitle from "@/components/section-title";
 import {
   Card,
