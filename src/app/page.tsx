@@ -3,6 +3,7 @@
 import ScrollingText from "@/components/scrolling-text";
 import AboutSection from "@/features/Home/Components/about-section";
 import Banner from "@/features/Home/Components/banner";
+import CertificateSection from "@/features/Home/Components/certificate-section";
 import ContactSection from "@/features/Home/Components/contact-section";
 import ProjectSection from "@/features/Home/Components/project-section";
 import ServicesSection from "@/features/Home/Components/services-section";
@@ -39,6 +40,10 @@ export default function Home() {
       <div className="container-rn">
         <ProjectSection />
       </div>
+
+    <div className="container-rn">
+      <CertificateSection />
+    </div>
 
       <div className="container-rn">
         <ContactSection />

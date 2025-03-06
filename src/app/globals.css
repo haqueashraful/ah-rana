@@ -106,7 +106,3 @@
     stroke-dashoffset: 0;
   }
 }
-
-body[data-scroll-locked] {
-  --removed-body-scroll-bar-size: 0;
-}

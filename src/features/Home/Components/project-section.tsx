@@ -23,7 +23,6 @@ interface itemType {
   id: number;
   title: string;
   description: string;
-  image: string;
   liveLink: string;
   codeLink: string;
 }
@@ -51,7 +50,7 @@ const ProjectSection = () => {
               <div className="p-1 h-full">
                 <Card className="min-h-full shadow-rn dark:shadow-dark-rn border !overflow-hidden">
                   <CardContent className="flex flex-col h-full space-y-4 !p-0">
-                    <Thumbnail url={item.image} className="w-full" />
+                    <Thumbnail url={item.liveLink} className="w-full" />
                   </CardContent>
                   <CardFooter className="flex-col pt-5 space-y-5">
                   <h3 className="text-xl uppercase font-semibold">{item.title}</h3>
