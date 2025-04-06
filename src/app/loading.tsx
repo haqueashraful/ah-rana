@@ -2,7 +2,7 @@ import React from "react";
 
 const Loading = () => {
   return (
-    <div className="loading">
+    <div className="loading min-h-[80vh] flex items-center justify-center">
       <svg
         width="392.625000"
         height="230.906250"

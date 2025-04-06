@@ -2,7 +2,7 @@ import AboutSection from "@/features/Home/Components/about-section";
 
 function page() {
     return (
-        <div className="min-h-screen container-rn">
+        <div className="container-rn">
                <AboutSection />
         </div>
     );

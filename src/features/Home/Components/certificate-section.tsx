@@ -11,10 +11,10 @@ const CertificateSection = () => {
       <SectionTitle intro="Certificates" title="My Certificates" description="There are some prove of my learning, skills and experience."/>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div className="flex flex-col items-center justify-center">
+        <div className="w-full h-full flex flex-col items-center justify-center">
           <Image
-            width={500}
-            height={500}
+            width={0}
+            height={0}
             src={certificate_one}
             alt="certificate-1"
           />
@@ -23,20 +23,20 @@ const CertificateSection = () => {
           </h3>
         </div>
 
-        <div className="flex flex-col items-center justify-center">
+        <div className="w-full h-full flex flex-col items-center justify-center">
           <Image
-            width={500}
-            height={500}
+            width={0}
+            height={0}
             src={certificate_two}
             alt="certificate-1"
           />
           <h3 className="text-lg font-semibold pt-4">Internship Certificate</h3>
         </div>
 
-        <div className="flex flex-col items-center justify-center">
+        <div className="w-full h-full flex flex-col items-center justify-center">
           <Image
-            width={500}
-            height={500}
+            width={0}
+            height={0}
             src={certificate_three}
             alt="certificate-1"
           />
