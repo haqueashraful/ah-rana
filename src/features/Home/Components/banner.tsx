@@ -5,37 +5,9 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import image from "@/assets/nobg.png";
-import { useEffect } from "react";
 
-// Optional: Define a type for the repo if you want type safety
-interface Repo {
-  name: string;
-  description: string | null;
-  homepage: string | null;
-  language: string | null;
-}
 
 const Banner = () => {
-
-  useEffect(() => {
-    fetch("https://api.github.com/users/haqueashraful/repos?per_page=100")
-      .then((res) => res.json())
-      .then((data: Repo[]) => {
-        console.log(data, "data");
-        const withHomepage = data
-        .filter((repo) => repo.homepage && repo.homepage.trim() !== "")
-        .map((repo) => ({
-          name: repo.name,
-          description: repo.description,
-          homepage: repo.homepage,
-          language: repo.language,
-        }));
-      
-
-        console.log(withHomepage, "withHomepage");
-      })
-      .catch((err) => console.error("Error fetching repos:", err));
-  }, []);
 
   return (
     <div className="py-28">
@@ -55,11 +27,11 @@ const Banner = () => {
         <div className="w-full space-y-5 py-6">
           <h1 className="text-3xl">Hi! I&apos;m Ashraful Haque. 👋🏻</h1>
           <h1 className="text-3xl lg:text-8xl font-bold">
-            Creating impactful
+             Attractive<span className="text-[#ec1552]">,</span> innovative <span className="text-[#ec1552] text-4xl">&</span>
             <br />
-            experiences on <br className="lg:hidden" />
+            experienced <br className="lg:hidden" />
             <span className="text-[#b6bcc6] dark:text-[#4d99f7]">
-              web design
+              web Developer<span className="text-[#ec1552]">.</span>
             </span>
           </h1>
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { CodeXml } from "lucide-react";
 
 const ScrollingText = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -23,7 +24,7 @@ const ScrollingText = () => {
         transition={{ ease: "linear", duration: 0.1 }}
       >
         <p className="py-5">
-          Web Developer {`{/}`}&nbsp; Web Developer {`{/}`}&nbsp; Web Developer {`{/}`}&nbsp;Web Developer {`{/}`}&nbsp; Web Developer {`{/}`}&nbsp; Web Developer {`{/}`}&nbsp;
+          Web Developer <CodeXml className="inline text-[#ec1552]" size={60} />  Web Developer <CodeXml className="inline text-[#ec1552]" size={60} />  Web Developer <CodeXml className="inline text-[#ec1552]" size={60} /> Web Developer <CodeXml className="inline text-[#ec1552]" size={60} />  Web Developer <CodeXml className="inline text-[#ec1552]" size={60} /> Web Developer <CodeXml className="inline text-[#ec1552]" size={60} /> 
         </p>
       </motion.div>
     </div>
