@@ -15,7 +15,7 @@ const NavItem = () => {
   const pathname = usePathname();
 
   return (
-    <div>
+    <div className="z-50">
       <ul className="flex flex-col lg:flex-row gap-2 lg:gap-16 w-full">
         {navItems.map((item) => (
           <li className="px-3 py-2 w-full" key={item.id}>

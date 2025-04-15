@@ -39,7 +39,7 @@ function NavBar() {
             <ArrowUpRight className="size-5" />
           </Button>
 
-          <div className="lg:hidden shadow-rn dark:shadow-dark-rn">
+          <div className="lg:hidden shadow-rn dark:shadow-dark-rn relative">
             <DropdownMenu modal={false} dir="ltr" open={open} onOpenChange={setOpen}>
               <DropdownMenuTrigger asChild>
                 <Button variant="outline" size="icon">
@@ -50,7 +50,8 @@ function NavBar() {
               <DropdownMenuContent
                 align="end"
                 sideOffset={10}
-                className="w-48 bg-background border"
+                className="w-48 bg-gray-500/30 backdrop-blur-md rounded-md z-50 absolute left-[100%] -translate-x-[100%] top-0 -translate-y-0"
+
               >
                 <NavItem />
               </DropdownMenuContent>
