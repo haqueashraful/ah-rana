@@ -20,7 +20,7 @@ const Footer = () => {
 
       <div className="w-full flex justify-center items-center bg-black dark:bg-white h-[.1px] my-2" />
 
-      <div className=" w-full flex justify-between items-center">
+      <div className=" w-full flex flex-col lg:flex-row justify-between items-center">
         <div>
           <p>&copy; 2025 Ashraful Haque Rana. All rights reserved.</p>
         </div>
@@ -29,7 +29,7 @@ const Footer = () => {
 
         <div className="flex gap-5 my-3">
           <Card
-            className="border rounded-md p-2"
+            className="border rounded-md p-2 "
             data-aos-anchor-placement="top-bottom"
             data-aos="zoom-in"
             data-aos-delay="200"
@@ -50,7 +50,7 @@ const Footer = () => {
           </Card>
 
           <Card
-            className="border rounded-md p-2"
+            className="border rounded-md p-2 "
             data-aos="zoom-in"
             data-aos-anchor-placement="top-bottom"
           >
@@ -69,7 +69,7 @@ const Footer = () => {
           </Card>
 
           <Card
-            className="border rounded-md p-2"
+            className="border rounded-md p-2 "
             data-aos-anchor-placement="top-bottom"
             data-aos="zoom-in"
             data-aos-delay="400"
@@ -104,28 +104,6 @@ const Footer = () => {
                 className="w-[32px] h-[32px] fill-current text-lg"
               >
                 <path d="M14.4 1.079A14 14 0 0 0 10.894 0a10 10 0 0 0-.449.913 13 13 0 0 0-3.892 0A10 10 0 0 0 6.102 0c-1.211.207-2.391.57-3.51 1.082C.374 4.366-.227 7.568.073 10.725c1.3.96 2.755 1.69 4.302 2.16q.523-.705.92-1.486a9 9 0 0 1-1.45-.693q.183-.133.356-.267a10.1 10.1 0 0 0 8.6 0q.175.144.356.267a9 9 0 0 1-1.454.694q.398.782.922 1.484a14.1 14.1 0 0 0 4.304-2.158c.353-3.66-.603-6.834-2.527-9.647M5.677 8.783c-.838 0-1.531-.76-1.531-1.696s.669-1.704 1.528-1.704c.86 0 1.547.768 1.533 1.704s-.676 1.696-1.53 1.696m5.648 0c-.84 0-1.53-.76-1.53-1.696s.669-1.704 1.53-1.704 1.543.768 1.528 1.704-.674 1.696-1.528 1.696"></path>
-              </svg>
-            </Link>
-          </Card>
-
-          <Card
-            className="border rounded-md p-2"
-            data-aos-anchor-placement="top-bottom"
-            data-aos="zoom-in"
-            data-aos-delay="800"
-          >
-            <Link target="_blank" href={"#"}>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 512 512"
-                width="32"
-                height="32"
-                aria-hidden="true"
-                className="w-[32px] h-[32px] fill-current text-lg"
-              >
-                <path d="M256 49.5c67.3 0 75.2.3 101.8 1.5 24.6 1.1 37.9 5.2 46.8 8.7 11.8 4.6 20.2 10 29 18.8s14.3 17.2 18.8 29c3.4 8.9 7.6 22.2 8.7 46.8 1.2 26.6 1.5 34.5 1.5 101.8s-.3 75.2-1.5 101.8c-1.1 24.6-5.2 37.9-8.7 46.8-4.6 11.8-10 20.2-18.8 29s-17.2 14.3-29 18.8c-8.9 3.4-22.2 7.6-46.8 8.7-26.6 1.2-34.5 1.5-101.8 1.5s-75.2-.3-101.8-1.5c-24.6-1.1-37.9-5.2-46.8-8.7-11.8-4.6-20.2-10-29-18.8s-14.3-17.2-18.8-29c-3.4-8.9-7.6-22.2-8.7-46.8-1.2-26.6-1.5-34.5-1.5-101.8s.3-75.2 1.5-101.8c1.1-24.6 5.2-37.9 8.7-46.8 4.6-11.8 10-20.2 18.8-29s17.2-14.3 29-18.8c8.9-3.4 22.2-7.6 46.8-8.7 26.6-1.3 34.5-1.5 101.8-1.5m0-45.4c-68.4 0-77 .3-103.9 1.5C125.3 6.8 107 11.1 91 17.3c-16.6 6.4-30.6 15.1-44.6 29.1S23.8 74.5 17.3 91c-6.2 16-10.5 34.3-11.7 61.2C4.4 179 4.1 187.6 4.1 256s.3 77 1.5 103.9c1.2 26.8 5.5 45.1 11.7 61.2 6.4 16.6 15.1 30.6 29.1 44.6s28.1 22.6 44.6 29.1c16 6.2 34.3 10.5 61.2 11.7s35.4 1.5 103.9 1.5 77-.3 103.9-1.5c26.8-1.2 45.1-5.5 61.2-11.7 16.6-6.4 30.6-15.1 44.6-29.1s22.6-28.1 29.1-44.6c6.2-16 10.5-34.3 11.7-61.2s1.5-35.4 1.5-103.9-.3-77-1.5-103.9c-1.2-26.8-5.5-45.1-11.7-61.2-6.4-16.6-15.1-30.6-29.1-44.6s-28.1-22.6-44.6-29.1C405.2 11 386.9 6.7 360 5.5c-27-1.1-35.6-1.4-104-1.4"></path>
-                <path d="M256 126.6c-71.4 0-129.4 57.9-129.4 129.4s58 129.4 129.4 129.4 129.4-58 129.4-129.4-58-129.4-129.4-129.4m0 213.4c-46.4 0-84-37.6-84-84s37.6-84 84-84 84 37.6 84 84-37.6 84-84 84"></path>
-                <circle cx="390.5" cy="121.5" r="30.2"></circle>
               </svg>
             </Link>
           </Card>

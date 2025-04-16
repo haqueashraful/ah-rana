@@ -8,7 +8,7 @@ import image from "@/assets/nobg.png";
 
 const Banner = () => {
   return (
-    <div className="py-28">
+    <div className="pt-28">
       <div className="w-full mx-auto gap-10 lg:gap-0">
         <div className="w-72 mx-auto">
           <Image
@@ -20,7 +20,7 @@ const Banner = () => {
             // or use layout="responsive" if desired
             width={288}
             height={288}
-            className="rounded-full shadow-rn dark:shadow-dark-rn"
+            className="rounded-full shadow-rn dark:shadow-dark-rn "
           />
         </div>
         <div className="w-full space-y-5 py-6">

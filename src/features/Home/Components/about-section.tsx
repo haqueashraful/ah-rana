@@ -31,14 +31,14 @@ const AboutSection = () => {
           height={0}
           alt="ashraful"
           src={image}
-          className="w-2/3 mx-auto lg:w-full h-full rounded-lg shadow-rn dark:shadow-dark-rn"
+          className="w-2/3 mx-auto lg:w-full h-full rounded-lg shadow-rn dark:shadow-dark-rn "
         />
 
         <div
         data-aos="fade-left"
-         className="flex justify-center flex-col">
-          <p data-aos="fade-left" className="text-justify text-lg">
-            Hello There! I am a Full Stack web developer. I have 4+ years of
+         className="flex justify-center flex-col ">
+          <p data-aos="fade-left" className="text-justify text-lg ">
+            Hello There! I am a Full Stack web developer. With several time of
             experience in web programming. My Technology Skills: HTML, CSS,
             SCSS, Tailwind CSS, Bootstrap, Material UI, JavaScript, ES6,
             React.js, React Router, Next.js, Redux, Firebase, Node.js,
@@ -47,7 +47,7 @@ const AboutSection = () => {
 
           {/* Cards Section */}
           <div className="w-full grid grid-cols-1 xl:grid-cols-3 items-center gap-4 xl:gap-8 mt-10">
-            <Card className="h-full" data-aos="fade-up">
+            <Card className="h-full " data-aos="fade-up">
               <CardHeader className="space-y-4">
                 <CardDescription>
                   <svg
@@ -83,7 +83,7 @@ const AboutSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="h-full" data-aos="fade-up" data-aos-delay="200">
+            <Card className="h-full " data-aos="fade-up" data-aos-delay="200">
               <CardHeader className="space-y-4">
                 <CardDescription>
                   <svg
@@ -116,7 +116,7 @@ const AboutSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="h-full" data-aos="fade-up" data-aos-delay="400">
+            <Card className="h-full " data-aos="fade-up" data-aos-delay="400">
               <CardHeader className="space-y-4">
                 <CardDescription>
                   <svg
@@ -152,16 +152,16 @@ const AboutSection = () => {
             </Card>
           </div>
 
-          <div className="mt-10" data-aos="fade-up">
+          <div className="mt-10 " data-aos="fade-up">
             <p>Tools I use</p>
 
             <div className="flex gap-5 my-3">
-              <Card className="border rounded-md p-2" data-aos="zoom-in">
+              <Card className="border rounded-md p-2 " data-aos="zoom-in">
                 <Image width={32} height={32} src={vscode} alt="vscode" />
               </Card>
 
               <Card
-                className="border rounded-md p-2"
+                className="border rounded-md p-2 "
                 data-aos="zoom-in"
                 data-aos-delay="200"
               >
@@ -169,7 +169,7 @@ const AboutSection = () => {
               </Card>
 
               <Card
-                className="border rounded-md p-2"
+                className="border rounded-md p-2 "
                 data-aos="zoom-in"
                 data-aos-delay="400"
               >
@@ -177,7 +177,7 @@ const AboutSection = () => {
               </Card>
 
               <Card
-                className="border rounded-md p-2"
+                className="border rounded-md p-2 "
                 data-aos="zoom-in"
                 data-aos-delay="600"
               >
@@ -185,7 +185,7 @@ const AboutSection = () => {
               </Card>
 
               <Card
-                className="border rounded-md p-2"
+                className="border rounded-md p-2 "
                 data-aos="zoom-in"
                 data-aos-delay="800"
               >

@@ -85,7 +85,7 @@ const ProjectSection = () => {
           ))}
         </div>
       ) : (
-        <Carousel plugins={[Autoplay({ delay: 2000 })]} className="w-full">
+        <Carousel plugins={[Autoplay({ delay: 4000 })]} className="w-full">
           <CarouselContent className="-ml-1">
             {myProject.map((item, index) => (
               <CarouselItem

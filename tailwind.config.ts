@@ -77,6 +77,10 @@ export default {
     function ({ addUtilities }: PluginAPI) {
       addUtilities({
         ".container-rn": {
+          "box-sizing": "border-box",
+          "width": "100%",
+          "max-width": "100vw",
+          "overflow-x": "hidden",
           "padding-left": "10px",
           "padding-right": "10px",
           "@screen md": {

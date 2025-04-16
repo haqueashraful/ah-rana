@@ -50,7 +50,7 @@ function NavBar() {
               <DropdownMenuContent
                 align="end"
                 sideOffset={10}
-                className="w-48 bg-gray-500/30 backdrop-blur-md rounded-md z-50 absolute left-[100%] -translate-x-[100%] top-0 -translate-y-0"
+                className="w-48 bg-gray-300/50 backdrop-blur-md rounded-md z-50 absolute left-[100%] -translate-x-[100%] top-0 -translate-y-0"
 
               >
                 <NavItem />
