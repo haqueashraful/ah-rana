@@ -24,7 +24,7 @@ const ServicesSection = () => {
         description="I am a frontend developer from IBangladesh with several times of experience in web design and development."
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-6 pb-5">
         <Card data-aos="fade-left" data-aos-delay="100" className="p-2 z-10 ">
           <CardHeader>
             <Image width={64} height={64} src={webdesign} alt="web-design" />

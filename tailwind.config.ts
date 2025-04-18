@@ -60,16 +60,22 @@ export default {
       },
       boxShadow: {
         rn: "12px 12px 12px #E6E6E6, -10px -10px 10px #FFFFFF",
-        "rn-hover": "12px 12px 12px #E6E6E6 inset, -10px -10px 10px #FFFFFF inset",
-        "rn-3d": "12px 12px 12px #E6E6E6, -10px -10px 10px #FFFFFF, 6px 6px 6px #E6E6E6 inset, -4px -4px 6px #FFFFFF inset",
-        "rn-3d-hover": "12px 12px 12px #E6E6E6 inset, -10px -10px 10px #FFFFFF inset, 6px 6px 6px #E6E6E6 inset, -4px -4px 6px #FFFFFF inset",
-      
-        "dark-rn": "12px 12px 12px hsl(217, 30%, 12%), -10px -10px 10px hsl(217, 30%, 22%)",
-        "dark-rn-hover": "12px 12px 12px hsl(217, 30%, 12%) inset, -10px -10px 10px hsl(217, 30%, 22%) inset",
-        "dark-rn-3d": "12px 12px 12px hsl(217, 30%, 12%), -10px -10px 10px hsl(217, 30%, 22%), 6px 6px 6px hsl(217, 30%, 12%) inset, -4px -4px 6px hsl(217, 30%, 22%) inset",
-        "dark-rn-3d-hover": "12px 12px 12px hsl(217, 30%, 12%) inset, -10px -10px 10px hsl(217, 30%, 22%) inset, 6px 6px 6px hsl(217, 30%, 12%) inset, -4px -4px 6px hsl(217, 30%, 22%) inset",
+        "rn-hover":
+          "12px 12px 12px #E6E6E6 inset, -10px -10px 10px #FFFFFF inset",
+        "rn-3d":
+          "12px 12px 12px #E6E6E6, -10px -10px 10px #FFFFFF, 6px 6px 6px #E6E6E6 inset, -4px -4px 6px #FFFFFF inset",
+        "rn-3d-hover":
+          "12px 12px 12px #E6E6E6 inset, -10px -10px 10px #FFFFFF inset, 6px 6px 6px #E6E6E6 inset, -4px -4px 6px #FFFFFF inset",
+
+        "dark-rn":
+          "12px 12px 12px hsl(217, 30%, 12%), -10px -10px 10px hsl(217, 30%, 22%)",
+        "dark-rn-hover":
+          "12px 12px 12px hsl(217, 30%, 12%) inset, -10px -10px 10px hsl(217, 30%, 22%) inset",
+        "dark-rn-3d":
+          "12px 12px 12px hsl(217, 30%, 12%), -10px -10px 10px hsl(217, 30%, 22%), 6px 6px 6px hsl(217, 30%, 12%) inset, -4px -4px 6px hsl(217, 30%, 22%) inset",
+        "dark-rn-3d-hover":
+          "12px 12px 12px hsl(217, 30%, 12%) inset, -10px -10px 10px hsl(217, 30%, 22%) inset, 6px 6px 6px hsl(217, 30%, 12%) inset, -4px -4px 6px hsl(217, 30%, 22%) inset",
       },
-      
     },
   },
   plugins: [
@@ -77,10 +83,6 @@ export default {
     function ({ addUtilities }: PluginAPI) {
       addUtilities({
         ".container-rn": {
-          "box-sizing": "border-box",
-          "width": "100%",
-          "max-width": "100vw",
-          "overflow-x": "hidden",
           "padding-left": "10px",
           "padding-right": "10px",
           "@screen md": {

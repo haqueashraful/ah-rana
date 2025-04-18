@@ -15,7 +15,7 @@ const ContactSection = () => {
         description="I'd love to hear from you! If you have any questions, comments or feedback, please use the form below."
       />
 
-      <div className="max-w-5xl mx-auto text-center space-y-6">
+      <div className="max-w-5xl mx-auto text-center space-y-6 pb-4">
         <form className="space-y-11">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <Input

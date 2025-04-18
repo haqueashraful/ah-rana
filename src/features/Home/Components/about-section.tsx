@@ -16,27 +16,36 @@ import git from "@/assets/git.png";
 import firebase from "@/assets/firebase.png";
 import mongo from "@/assets/mongo.png";
 import image from "@/assets/one.jpeg";
-
+import { useEffect, useState } from "react";
 
 const AboutSection = () => {
 
+  const [avatar, setAvarat] = useState("");
+
+  useEffect(() => {
+      fetch("https://api.github.com/users/haqueashraful")
+        .then((res) => res.json())
+        .then((data) => {
+          setAvarat(data.avatar_url);
+        })
+        .catch((err) => console.error("Error fetching repos:", err));
+    }, []);
+
   return (
-    <div>
+    <div className="overflow-hidden">
       <SectionTitle intro="Introduction" title="Who am I?" />
 
-      <div className="flex items-start gap-10 flex-col xl:flex-row">
+      <div className="flex items-start gap-10 flex-col xl:flex-row px-4 py-5">
         <Image
           data-aos="fade-right"
-          width={0}
-          height={0}
+          width={1080}
+          height={720}
           alt="ashraful"
-          src={image}
-          className="w-2/3 mx-auto lg:w-full h-full rounded-lg shadow-rn dark:shadow-dark-rn "
+          src={avatar || image}
+          className="rounded-lg shadow-rn dark:shadow-dark-rn "
         />
 
-        <div
-        data-aos="fade-left"
-         className="flex justify-center flex-col ">
+        <div data-aos="fade-left" className="flex justify-center flex-col ">
           <p data-aos="fade-left" className="text-justify text-lg ">
             Hello There! I am a Full Stack web developer. With several time of
             experience in web programming. My Technology Skills: HTML, CSS,

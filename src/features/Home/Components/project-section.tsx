@@ -71,7 +71,7 @@ const ProjectSection = () => {
           {myProject.map((item, index) => (
           <div
           key={index}
-          className="w-full sticky transition-transform duration-300 ease-in-out"
+          className="w-full sticky transition-transform ease-in-out"
           style={{
             top: `${index * 10}px`,
             transform: `scale(${1 - index * 0.01})`,

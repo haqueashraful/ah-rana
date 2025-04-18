@@ -43,7 +43,7 @@ const CustomCursor = () => {
 
   return (
     <div
-      className={`fixed pointer-events-none transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-out rounded-full
+      className={`fixed pointer-events-none z-50 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-out rounded-full
         ${isMoving
           ? 'w-12 h-12 bg-blue-500/50 blur-sm'
           : 'w-12 h-12 border-2 border-blue-500 bg-transparent'

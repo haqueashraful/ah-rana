@@ -2,12 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-body, html {
-  overflow-x: hidden;
-  width: 100%;
-  position: relative;
-}
-
 @layer base {
   :root {
     --background: 0 0% 95%;
@@ -101,14 +95,23 @@ body, html {
   stroke-width: 0.5;
   stroke-dasharray: 30;
   stroke-dashoffset: 10;
-  animation: textAnimation 4s ease-in-out 1 forwards;
+  animation: textAnimation 4s ease-in-out infinite forwards;
 }
 
 @keyframes textAnimation {
   0% {
     stroke-dashoffset: 30;
   }
-  100% {
+  25% {
     stroke-dashoffset: 0;
+  }
+  50%{
+    stroke-dashoffset: 10;
+  }
+  75% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 30;
   }
 }
