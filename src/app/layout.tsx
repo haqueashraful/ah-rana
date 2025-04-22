@@ -4,6 +4,7 @@ import NavBar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 import CustomCursor from "@/components/custom-cursor";
+import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
   title: "Md Ashraful Haque Rana",
@@ -32,6 +33,7 @@ export default function RootLayout({
           <NavBar />
           <CustomCursor />
           {children}
+          <Toaster />
           <Footer />
         </ThemeProvider>
       </body>
