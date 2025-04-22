@@ -181,12 +181,6 @@ export async function POST(request: Request) {
     const body = await request.json();
     const { name, email, subject, message } = body;
 
-    const { text, html } = generateEmailContent({
-      name,
-      email,
-      subject,
-      message,
-    });
 
     await transporter.sendMail({
       ...mailOptions,

@@ -1,5 +1,13 @@
 // lib/api.ts
-export const sendContactForm = async (data: any) => {
+
+interface ContactFormData {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+}
+
+export const sendContactForm = async (data: ContactFormData) => {
   const res = await fetch("/api/contact", {
     method: "POST",
     body: JSON.stringify(data),
