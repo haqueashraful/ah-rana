@@ -57,7 +57,7 @@ const Banner = () => {
             </Link>
 
             <Link href="https://github.com/haqueashraful" target="_blank">
-              <button className="flex justify-center items-center">
+              <button className="flex justify-center items-center animate-bounce">
                 <svg
                   width="48px"
                   height="48px"

@@ -1,5 +1,3 @@
-// lib/api.ts
-
 interface ContactFormData {
   name: string;
   email: string;

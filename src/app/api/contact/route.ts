@@ -1,4 +1,3 @@
-// app/api/contact/route.ts
 import { mailOptions, transporter } from "@/lib/nodemailer";
 import { NextResponse } from "next/server";
 
@@ -187,6 +186,10 @@ export async function POST(request: Request) {
       ...generateEmailContent({ name, email, subject, message }),
       subject: subject || "New Contact Form Message",
     });
+
+
+    transporter.close();
+
 
     return NextResponse.json({
       success: true,

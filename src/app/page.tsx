@@ -18,7 +18,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center justify-center container-rn">
         <ScrollingText />
-        <p className="text-lg text-gray-600 mt-10">
+        <p className="text-lg text-gray-600 dark:text-white mt-10">
           Explore my portfolio below!
         </p>
       </div>

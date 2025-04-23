@@ -5,7 +5,7 @@ import SectionTitle from "@/components/section-title";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, Loader2 } from "lucide-react";
 import { sendContactForm } from "../../../lib/api";
 import { useToast } from "@/hooks/use-toast";
 
@@ -16,10 +16,12 @@ const ContactSection = () => {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false); 
   const {toast} = useToast();
 
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    setIsSubmitting(true);
 
     const form = event.currentTarget;
     const formData = new FormData(form);
@@ -39,7 +41,10 @@ const ContactSection = () => {
     setErrors(newErrors);
 
     const hasErrors = Object.values(newErrors).some((err) => err);
-    if (hasErrors) return;
+    if (hasErrors) {
+      setIsSubmitting(false); 
+      return;
+    }
 
     try {
       const res = await sendContactForm({ name, email, subject, message });
@@ -59,6 +64,8 @@ const ContactSection = () => {
         title: "Error",
         description: "Failed to send message.",
       })
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -125,12 +132,22 @@ const ContactSection = () => {
             data-aos="fade-down"
             data-aos-delay="400"
             type="submit"
+            disabled={isSubmitting}
             className=""
           >
-            Submit now
-            <span className="ml-2">
-              <ChevronRight />
-            </span>
+            {isSubmitting ? (
+              <>
+                <Loader2 className="mr-2 h-4 w-4 animate-spin" />
+                Submitting...
+              </>
+            ) : (
+              <>
+                Submit now
+                <span className="ml-2">
+                  <ChevronRight />
+                </span>
+              </>
+            )}
           </Button>
         </form>
       </div>
